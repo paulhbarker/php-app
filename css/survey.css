@@ -1,0 +1,124 @@
+/* CSS Document */
+
+body {
+  font-family: Georgia, Cambria, "Times New Roman", serif; 
+}
+
+.col-sm-12 {
+  background-color: #fff; 
+}
+
+.survey-title {
+  text-transform: uppercase;
+  margin: 100px 0;
+  font-size: 40px;
+  letter-spacing: 2px; 
+}
+
+.survey-total {
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+.survey-form,
+.results-form {
+  max-width: 500px;
+  margin: 0 auto 200px auto; 
+}
+
+.survey-form h2,
+.results-form h2 {
+  margin-top: 50px;
+}
+
+.survey-form ul,
+.survey-form ol,
+.results-form ul,
+.results-form ol {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
+	max-width: 800px;
+}
+
+.survey-form li,
+.results-form li {
+	margin: 0 auto;
+	padding: 0.4em 0;
+	position: relative;
+}
+
+.results-form li {
+	position: relative;
+	font-size: 1.3em;
+	padding: 0 0 0 30px;
+	vertical-align: top;
+	color: rgba(0,0,0,0.7);
+  font-weight: normal;
+}
+
+.results-form span {
+  float: right;
+  padding: 0 60px 0 0;
+}
+
+.survey-form label {
+	display: inline-block;
+	position: relative;
+	font-size: 1.3em;
+	padding: 0 0 0 45px;
+	vertical-align: top;
+	color: rgba(0,0,0,0.5);
+	cursor: pointer;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+  font-weight: normal;
+}
+
+.survey-form input[type="submit"] {
+  margin-top: 30px;
+}
+
+.survey-form input[type="checkbox"],
+.survey-form input[type="radio"],
+.survey-form label::before {
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	left: 0;
+	margin-top: -12.5px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.survey-form input[type="checkbox"],
+.survey-form input[type="radio"] {
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.survey-form label::before {
+	content: '';
+	border: 1px solid #000;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.survey-form label::before {
+	border-radius: 50%;
+}
+
+.survey-form input[type="checkbox"]:checked + label,
+.survey-form input[type="radio"]:checked + label {
+	color: #333;
+  margin-left: 50px;
+} 
+
+.survey-form input[type="checkbox"]:checked + label::before,
+.survey-form input[type="radio"]:checked + label::before {
+	opacity: 0.8;
+  background-color: #000;
+}
