@@ -32,7 +32,7 @@
           
           <div class='row text-center'>
             <div class='col-sm-12'>
-              <h1>Coming Soon</h1>
+              <h1><a href='survey'>PHP Survey</a></h1>
             </div>
           </div>
           
