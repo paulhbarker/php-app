@@ -1,0 +1,14 @@
+/* CSS Document */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 40px; 
+}
+
+h2 {
+  margin-bottom: 50px; 
+}
