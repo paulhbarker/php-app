@@ -5,9 +5,9 @@
  */
 
 $server = 'localhost';
-$dbname= '';
-$userName = '';
-$pass = '';
+$dbname= 'dthrmthr_budget';
+$userName = 'dthrmthr_client';
+$pass = '%Q{Gb&@lggt-';
 $dsn = 'mysql:host='.$server.';dbname='.$dbname;
 
 // Now create the actual connection object and assign it to a variable

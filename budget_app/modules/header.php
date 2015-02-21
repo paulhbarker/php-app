@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title><?php echo $title ?> | Budget Application</title>
-  <link rel="stylesheet" type="text/css" media='screen' href="http://www.<?php echo $_SERVER['HTTP_HOST'].$dir?>../css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" media='screen' href="http://www.<?php echo $_SERVER['HTTP_HOST'].$dir?>../css/budget_app.css">
+  <link rel="stylesheet" type="text/css" media='screen' href="http://<?php echo $_SERVER['HTTP_HOST'].$dir?>../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" media='screen' href="http://<?php echo $_SERVER['HTTP_HOST'].$dir?>../css/budget_app.css">
 </head>
 <body>
 	<div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -29,7 +29,7 @@
               echo "<li><a href='".$dir."users'>Users</a></li>";
             }
           ?>
-          <li><a href="#">Logout</a></li>
+          <li><a href="<?php echo $dir ?>logout">Logout</a></li>
         </ul>
       </div>
     </div> 
